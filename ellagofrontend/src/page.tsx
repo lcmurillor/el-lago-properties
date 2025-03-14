@@ -1,12 +1,15 @@
-import { Button } from "./components/ui/button"
+import { CarouselTextBanner, FeaturedProducts} from "@/components"
 
 
 
-export const Page = () => {
+ const Page = () => {
   return (
     <main>
-        Hola form home
-        <Button>Click me</Button>
+        <CarouselTextBanner />
+        <FeaturedProducts/>
     </main>
   )
 }
+
+
+export default Page

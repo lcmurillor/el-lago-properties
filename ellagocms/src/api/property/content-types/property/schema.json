@@ -42,6 +42,10 @@
     },
     "price": {
       "type": "decimal"
+    },
+    "isFeatured": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

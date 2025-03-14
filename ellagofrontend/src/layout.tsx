@@ -1,5 +1,5 @@
 import {Navbar, Footer, ThemeProvider} from "./components";
-import { Page } from "./page";
+import  Page  from "./page";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const Layout = () => {
