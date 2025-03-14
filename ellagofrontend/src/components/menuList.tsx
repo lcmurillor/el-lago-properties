@@ -5,43 +5,20 @@ import {
     NavigationMenuLink,
     NavigationMenuList,
     NavigationMenuTrigger
-} from "@/components/ui/navigation-menu"
+} from "../components"
+
+import menuItems from "@/helpers/menuItems";
 
 const MenuList = () => {
     return (
         <div>
             <NavigationMenu>
                 <NavigationMenuList>
-                    <NavigationMenuItem>
-                        <NavigationMenuLink href="/">Home</NavigationMenuLink>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem>
-                        <NavigationMenuLink href="/">Residential</NavigationMenuLink>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem>
-                        <NavigationMenuLink href="/">Commercial</NavigationMenuLink>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem>
-                        <NavigationMenuLink href="/">Land & Lots</NavigationMenuLink>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem>
-                        <NavigationMenuLink href="/">Rentals</NavigationMenuLink>
-                    </NavigationMenuItem>
-
-                    <NavigationMenuItem>
-                        <NavigationMenuTrigger>More</NavigationMenuTrigger>
-                        <NavigationMenuContent className="min-w-max">
-
-                            <NavigationMenuLink href="/" >
-                                About Us
-                            </NavigationMenuLink>
-
-                            <NavigationMenuLink href="/">
-                                Contact
-                            </NavigationMenuLink>
-
-                        </NavigationMenuContent>
-                    </NavigationMenuItem>
+                    {menuItems.map(({ id, link, name }) => (
+                        <NavigationMenuLink key={id} href={link}>
+                            {name}
+                        </NavigationMenuLink>
+                    ))}
 
                 </NavigationMenuList>
             </NavigationMenu>
