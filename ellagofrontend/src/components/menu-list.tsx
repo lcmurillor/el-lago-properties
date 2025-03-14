@@ -1,13 +1,10 @@
 import {
     NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuItem,
     NavigationMenuLink,
-    NavigationMenuList,
-    NavigationMenuTrigger
-} from "../components"
+    NavigationMenuList
+} from "."
 
-import menuItems from "@/helpers/menuItems";
+import menuItems from "@/helpers/menu-items";
 
 const MenuList = () => {
     return (

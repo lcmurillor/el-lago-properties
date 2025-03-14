@@ -1,6 +1,6 @@
 import { Menu } from "lucide-react";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "../components";
-import menuItems from "@/helpers/menuItems";
+import menuItems from "@/helpers/menu-items";
 
 const MenuListMovil = () => {
     return (<div>
