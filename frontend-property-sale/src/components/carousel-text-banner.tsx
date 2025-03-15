@@ -27,7 +27,7 @@ export const dataCarousel = [
   {
     id: 2,
     title: "Nuevas propiedades",
-    description: "Actualziazamos las propiedades todas las semanas",
+    description: "Actualizamos las propiedades todas las semanas",
     link: "#",
   },
   {

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const useGetFeaturedProducts = () => {
-  const url = `${import.meta.env.VITE_API_URL}/api/properties?filters[isFeatured][$eq]=true&populate=*`;
+  const url = `${import.meta.env.VITE_API_URL}/api/properties?filters[is_featured][$eq]=true&populate=*`;  
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");

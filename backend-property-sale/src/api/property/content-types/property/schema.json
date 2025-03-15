@@ -11,20 +11,16 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "propertyName": {
-      "type": "string"
+    "title": {
+      "type": "string",
+      "required": true
     },
     "slug": {
       "type": "uid",
-      "targetField": "propertyName"
+      "targetField": "title"
     },
     "description": {
       "type": "text"
-    },
-    "category": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::category.category"
     },
     "images": {
       "type": "media",
@@ -41,11 +37,46 @@
       "type": "string"
     },
     "price": {
-      "type": "decimal"
+      "type": "decimal",
+      "required": true,
+      "default": 0
     },
-    "isFeatured": {
+    "is_featured": {
       "type": "boolean",
       "default": false
+    },
+    "property_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::property-type.property-type"
+    },
+    "map_location_url": {
+      "type": "string",
+      "required": true
+    },
+    "agent": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::agent.agent"
+    },
+    "bedrooms": {
+      "type": "integer",
+      "default": 0
+    },
+    "bathrooms": {
+      "type": "integer",
+      "required": false,
+      "default": 0
+    },
+    "is_available": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "size": {
+      "type": "decimal",
+      "default": 0,
+      "required": true
     }
   }
 }

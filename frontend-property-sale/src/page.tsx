@@ -1,4 +1,4 @@
-import { CarouselTextBanner, FeaturedProducts} from "@/components"
+import { CarouselTextBanner, FeaturedProducts, BannerDiscount, ChooseCategory} from "@/components"
 
 
 
@@ -7,6 +7,8 @@ import { CarouselTextBanner, FeaturedProducts} from "@/components"
     <main>
         <CarouselTextBanner />
         <FeaturedProducts/>
+        <BannerDiscount/>
+        <ChooseCategory/>
     </main>
   )
 }

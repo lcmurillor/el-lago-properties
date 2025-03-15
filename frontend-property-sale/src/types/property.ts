@@ -1,29 +1,38 @@
-type Category = {
-    id: number;
-    documentId: string;
-    categoryName: string;
-    slug: string;
-    createdAt: string;
-  };
-  
- export  type ImageType = {
-    url: string;
-    alt?: string;
-  };
-  
-  export type PropertyType = {
-    id: number;
-    documentId: string;
-    propertyName: string;
-    slug: string;
-    description: string;
-    price: number;
-    location: string;
-    isFeatured: boolean;
-    images: ImageType[];
-    createdAt: string;
-    updatedAt: string;
-    publishedAt: string;
-    category: Category;
-  };
-  
+export type PropertyType = {
+  id: number;
+  title: string;
+  slug: string;
+};
+
+export type Image = {
+  id: number;
+  name: string;
+  url: string;
+  alt?: string;
+};
+
+export type Agent = {
+  id: number;
+  name: string;
+  email: string;
+  number: number;
+  slug: string;
+};
+
+export type Property = {
+  agent: Agent;
+  bathrooms: number;
+  bedrooms: number;
+  property_type: PropertyType;
+  description: string;
+  id: number;
+  images: Image[];
+  is_available: boolean;
+  is_featured: boolean;
+  location: string;
+  map_location_url: string;
+  price: number;
+  size: number;
+  slug: string;
+  title: string;
+};
