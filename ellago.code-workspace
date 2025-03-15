@@ -1,10 +1,10 @@
 {
 	"folders": [
 		{
-			"path": "ellagocms"
+			"path": "backend-property-sale"
 		},
 		{
-			"path": "ellagofrontend"
+			"path": "frontend-property-sale"
 		}
 	],
 	"settings": {}

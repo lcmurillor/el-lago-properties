@@ -1,7 +1,7 @@
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { Separator, useTheme } from "../components";
-import isologo from "../assets/isologo.svg";
-import isologoDarck from "../assets/isologo-dark.svg";
+import imagotipo from "../assets/imagotipo.svg";
+// import isologoDarck from "../assets/isologo-dark.svg";
 
 const dataFooter = [
   {
@@ -38,9 +38,9 @@ const Footer = () => {
       <div className="w-full max-w-screen-xl mx-auto p-6 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <img
-            src={theme === "light" ? isologo : isologoDarck}
+            src={theme === "light" ? imagotipo : imagotipo}
             alt="logo"
-            className="w-1/8"
+            className="w-1/12"
             onClick={() => navigate("/")}
           />
 

@@ -12,22 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "categoryName": {
+    "name": {
       "type": "string"
     },
     "slug": {
-      "type": "uid",
-      "targetField": "categoryName"
-    },
-    "miniImage": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      "type": "uid"
     }
   }
 }
