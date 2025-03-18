@@ -19,6 +19,20 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

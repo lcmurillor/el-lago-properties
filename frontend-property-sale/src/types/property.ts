@@ -2,6 +2,8 @@ export type PropertyType = {
   id: number;
   title: string;
   slug: string;
+  description: string;
+  images: Image[];
 };
 
 export type Image = {
