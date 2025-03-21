@@ -26,10 +26,10 @@ module.exports = ({ env }) => {
       connection: {
         connectionString: env('DATABASE_URL'),
         host: env('DATABASE_HOST', '192.168.0.22'),
-        port: env.int('DATABASE_PORT', 5431),
-        database: env('DATABASE_NAME', 'ellagoproperties'),
+        port: env.int('DATABASE_PORT', 5432),
+        database: env('DATABASE_NAME', 'stellarproperties'),
         user: env('DATABASE_USERNAME', 'postgres'),
-        password: env('DATABASE_PASSWORD', 'mysecretpassword'),
+        password: env('DATABASE_PASSWORD', 'Gf6qKNgO^nLsXWrun'),
         ssl: env.bool('DATABASE_SSL', false) && {
           key: env('DATABASE_SSL_KEY', undefined),
           cert: env('DATABASE_SSL_CERT', undefined),

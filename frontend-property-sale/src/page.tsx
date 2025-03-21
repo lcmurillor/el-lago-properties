@@ -1,4 +1,4 @@
-import { CarouselTextBanner, FeaturedProducts, BannerDiscount, ChooseCategory} from "@/components"
+import { CarouselTextBanner, FeaturedProducts, BannerDiscount, ChooseCategory, BannerProperty} from "@/components"
 
 
 
@@ -9,6 +9,7 @@ import { CarouselTextBanner, FeaturedProducts, BannerDiscount, ChooseCategory} f
         <FeaturedProducts/>
         <BannerDiscount/>
         <ChooseCategory/>
+        <BannerProperty/>
     </main>
   )
 }

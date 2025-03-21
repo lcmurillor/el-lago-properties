@@ -9,6 +9,7 @@ export { default as SkeletonSchema } from "./skeleton-schema";
 export {default as IconButton} from "./icon-button";
 export {default as BannerDiscount} from "./banner-discount";
 export {default as ChooseCategory} from "./choose-categor";
+export {default as BannerProperty} from "./banner-property"
 export * from './ui/skeleton'
 export * from "./theme-provider";
 export * from "./ui/button";
